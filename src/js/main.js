@@ -13,14 +13,15 @@ $(function() {
 
     $('.intro__slider').slick({
         dots: false,
-        arrows: false,
+        arrows: true,
         infinite: true,
-        autoplay: false,
-        autoplaySpeed: 2000,
-        speed: 700,
-        fade: false,
-        cssEase: 'linear',
-        adaptiveHeight: true
+        autoplay: true,
+        autoplaySpeed: 3000,
+        speed:700,
+        fade: true,
+        cssEase: 'ease-in-out',
+        adaptiveHeight: false,
+        infinite: true
     });
    
 
