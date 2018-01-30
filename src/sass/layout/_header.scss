@@ -1,0 +1,132 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    @include flex-row;
+    background: #fff;
+    padding: 20px 0 11px 17px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+.logo__wrap{
+    padding-left: 65px;
+    background: url('../img/Logo.png') left center no-repeat;
+    background-attachment: inherit;
+}
+.title{
+    color: #727372;
+    font-family: $base-font;
+    line-height: 1.625rem;
+    font-size: 2.375rem;
+    font-weight: 700;
+    // Text style for "Seven"
+    font-weight: 700;
+
+    //Text style for "Oaks"
+    span {
+        font-family: 'Proxima Nova Lt';
+        font-weight: 300;
+    }
+
+}
+
+
+.nav__group{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.search {
+    @include flex-row;
+    background: rgba(27, 127, 155, 0.6);
+    position: relative;
+    right: -13px;
+    padding: 11px 22px 11px 13px;
+    justify-content: space-between;
+   
+    //right rectangule
+    &:before {
+        content: '';
+        position: absolute;
+        top: 6px;
+        right: 0;
+        background: rgba(27, 127, 155, 0.6);
+        height: 100%;
+        width: 13px;
+        transform: skewY(135deg);        
+    }
+}
+
+.search__list{
+    // justify-content: flex-end;
+    @include flex-row;
+    list-style: none;
+    margin-right: 99px - 15px;
+    margin: 0 73px 0 0;
+    padding: 0;
+    
+}
+
+.search__item {
+    padding: 0;
+    margin-right: 10px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.search__link, .nav__link{
+    text-decoration: none;
+    font-family: $base-font;
+}
+
+.search__link{
+    width: 100%;
+    display: block;
+    color: #fff;
+    font-size: 0.813rem;
+    font-weight: 400;
+
+    &:hover {
+        color: #668333;
+    }
+
+    
+}
+
+ .fa-search {
+        color: #fff;
+    }
+.nav {
+    padding-right: 17px;
+}
+.nav__list{
+    @include flex-row;
+    list-style: none;
+   
+}
+.nav__item {
+    text-transform: uppercase;
+    margin-right: 60px;
+    
+    
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.nav__link{
+    width: 28.438rem;
+    height: 0.75rem;
+    color: #668333;
+    font-size: 0.938rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #6d893c;
+
+    &:hover{
+        color: #4999af;
+    }
+}

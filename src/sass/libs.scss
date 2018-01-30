@@ -1,6 +1,8 @@
-@import "src/libs/normalize/normalize"; //импорт font-normalise
-@import "src/libs/fontawesome/font-awesome"; //шрифты
-@import "src/libs/slick-carousel/slick/slick.scss";
+@import "src/libs/normalize/normalize"; //soft reset default browsers properties
+@import "src/libs/fontawesome/font-awesome"; //font's icon
+@import "src/fonts/myriadpro/stylesheet"; //font's icon
+@import "src/fonts/proximanova/stylesheet"; //font's icon
+@import "src/libs/slick-carousel/slick/slick.scss"; //slick slider
 @import "src/libs/slick-carousel/slick/slick-theme.scss";
 
     

@@ -1,47 +1,28 @@
 $(function() {
 
-    //navigation click======
-    $('.nav__item a').click(function (e) {
-        e.preventDefault();
-        console.log($(this).attr('href'));
-        var getHref = $(this).attr('href');
-        var jump = $(getHref).offset().top;
-        $('html, body').animate({
-            scrollTop: jump
-        }, 1000);
-    });
+        // //navigation click======
+        // $('.nav__item a').click(function (e) {
+        //     e.preventDefault();
+        //     console.log($(this).attr('href'));
+        //     var getHref = $(this).attr('href');
+        //     var jump = $(getHref).offset().top;
+        //     $('html, body').animate({
+        //         scrollTop: jump
+        //     }, 1000);
+        // });
 
-    $('.testimonial__slider').slick({
+    $('.intro__slider').slick({
         dots: false,
         arrows: false,
         infinite: true,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2000,
         speed: 700,
         fade: false,
         cssEase: 'linear',
-        adaptiveHeight: false
+        adaptiveHeight: true
     });
    
-
-    // $('.parallax-window').parallax({ 
-    //     imageSrc: '../img/paralax_bg.jpg' 
-    // });
-
-    //dropdown header
-    $(document).scroll(function () {
-        console.log($(document).scrollTop());
-        if (($(document).scrollTop() > 130)) {
-            
-            $('.header').addClass('header-fixed'); 
-           
-        } else
-        $('.header').removeClass('header-fixed');
-       
-     
-    }); 
-
-  
 
     //button up
     $(document).click(function (event) {
