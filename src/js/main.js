@@ -16,10 +16,10 @@ $(function() {
         arrows: true,
         infinite: true,
         autoplay: true,
-        autoplaySpeed: 3000,
-        speed:700,
+        autoplaySpeed: 2900,
+        speed:3000,
         fade: true,
-        cssEase: 'ease-in-out',
+        cssEase: 'ease',
         adaptiveHeight: false,
         infinite: true
     });

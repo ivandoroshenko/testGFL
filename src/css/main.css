@@ -163,6 +163,10 @@ body {
   .search__item:last-child {
     margin-right: 0; }
 
+.search__item--line {
+  font-size: 11px;
+  color: #fff; }
+
 .search__link, .nav__link {
   text-decoration: none;
   font-family: "Proxima Nova Rg", sans-serif; }
