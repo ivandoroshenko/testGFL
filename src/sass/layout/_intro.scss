@@ -1,0 +1,33 @@
+.intro {
+    position: relative;
+}
+.intro__container{
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.intro__title-wrapper {
+    background: #3d899f;
+    opacity: 0.8;
+    padding: 25px 39px 28px 19px;
+    position: absolute;
+    left: 0;
+    bottom: 39px;
+}
+
+.intro__title {
+    padding: 0;
+    margin: 0;
+    max-width: 410px;
+    color: #fff;
+    font-family: $base-font;
+    font-size: 2.125rem;
+    font-weight: 700;
+
+    span {
+        font-weight: 300;
+    }
+}
