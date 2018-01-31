@@ -251,5 +251,95 @@ body {
   .intro__title span {
     font-weight: 300; }
 
+.events {
+  background: #f3eeea;
+  padding: 30px 0 50px; }
+
+.events__gallery {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.events__card {
+  position: relative;
+  margin-right: 20px; }
+  .events__card:last-child {
+    margin-right: 0; }
+
+.events__card-img {
+  display: block; }
+
+.events__card-descr {
+  height: 100%;
+  position: absolute;
+  width: 320px;
+  margin: 0 20px 0 0;
+  padding: 96px 0 0 0;
+  top: 0;
+  left: 0;
+  text-align: right; }
+
+.events__card-title {
+  min-width: 280px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-family: "Proxima Nova Rg", sans-serif;
+  font-size: 2.813rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0 20px 0 0; }
+
+.events__card-link {
+  max-width: 270px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 8px 12px 8px 20px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 11px;
+  color: #fff;
+  font-family: "Proxima Nova Rg", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+  -webkit-transition: opacity .2s ease-in-out;
+  -o-transition: opacity .2s ease-in-out;
+  transition: opacity .2s ease-in-out; }
+  .events__card-link--left {
+    background: #1b7f9b;
+    opacity: 0.8; }
+  .events__card-link--center {
+    background: #668333;
+    opacity: 0.8; }
+  .events__card-link--right {
+    background: #f1715e;
+    opacity: 0.8; }
+  .events__card-link:hover {
+    opacity: 1; }
+  .events__card-link svg {
+    border: 2px solid #fff;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    margin-left: 11px; }
+
 .footer {
   background-color: #2f2f2f; }
