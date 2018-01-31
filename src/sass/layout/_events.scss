@@ -5,10 +5,11 @@
 
 .events__gallery {
     @include flex-row;
+    justify-content: space-between;
 }
 .events__card {
     position: relative;
-    margin-right: 20px;
+    
 
     &:last-child {
         margin-right: 0;
@@ -87,3 +88,8 @@ margin: 0 20px 0 0;
     }
 }
 
+.events__descr {
+    @include flex-row;
+    padding-top: 33px;
+    justify-content: space-between;
+}
