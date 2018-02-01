@@ -364,5 +364,17 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
+.events__descr-left {
+  width: 48%; }
+
+.events__title {
+  width: 199px;
+  height: 15px;
+  color: #4999af;
+  font-family: "Proxima Nova";
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase; }
+
 .footer {
   background-color: #2f2f2f; }
