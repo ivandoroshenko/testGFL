@@ -43,7 +43,6 @@ body {
   height: auto; }
 
 .btn {
-  background: #4999af;
   color: #f3eeea;
   font-family: "Proxima Nova Rg", sans-serif;
   font-size: 1.125rem;
@@ -492,7 +491,8 @@ body {
   text-transform: uppercase; }
 
 .events__btn {
-  margin-left: auto; }
+  margin-left: auto;
+  background: #4999af; }
 
 .events__day {
   margin: 0;
@@ -550,6 +550,95 @@ body {
   margin: 0 0 21px 0; }
 
 .footer {
-  background: #2f2f2f;
+  background: #525252; }
+
+.footer__container {
+  padding: 32px 0 34px; }
+
+.footer__address-wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-right: 56px; }
+
+.footer__title {
+  padding: 0;
+  margin: 0 0 36px 0;
+  max-width: 286px;
+  line-height: 14px;
+  color: #f3eeea;
+  font-family: "Proxima Nova Rg", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-transform: uppercase; }
+  .footer__title--email {
+    margin-bottom: 27px; }
+
+.footer__shift-time {
+  padding: 0;
+  margin: 0 0 7px 0;
+  line-height: 18px;
+  color: #f3eeea;
+  font-family: "Proxima Nova Lt";
+  font-size: 20px;
+  font-weight: 400; }
+
+.footer__shift-text {
+  padding: 0;
   margin: 0;
-  padding: 32px 56px 34px 0; }
+  max-width: 256px;
+  line-height: 10px;
+  color: #b3b3b3;
+  font-family: "Proxima Nova Rg", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400; }
+
+.footer__btn {
+  background: #4999af;
+  padding: 9px 77px; }
+
+.footer__copy {
+  width: 100%;
+  margin: 0;
+  padding-top: 18px; }
+
+.social__wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.social__link {
+  margin-right: 8px; }
+  .social__link:last-child {
+    margin-right: 0; }
+  .social__link img {
+    display: block; }
