@@ -14,7 +14,7 @@
     @include flex-row;
     justify-content: space-between;
     align-items: flex-start;
-    padding-right: 56px;
+    padding: 0 56px 40px 0;
 
 }
 .footer__title {
@@ -80,4 +80,15 @@
 .footer__copy{
     padding-top: 18px;
     border-top: 1px solid #6b6b6a;
+}
+
+.footer__copy-text {
+    padding: 0;
+    margin: 0;
+    width: 379px;
+    height: 13px;
+    color: #b3b3b3;
+    font-family: "Myriad Pro";
+    font-size: 0.75rem;
+    font-weight: 400;
 }
