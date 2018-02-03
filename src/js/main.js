@@ -14,14 +14,17 @@ $(function() {
     $('.intro__slider').slick({
         dots: false,
         arrows: true,
-        infinite: true,
+        infinite: false,
         autoplay: true,
-        autoplaySpeed: 2900,
-        speed:3000,
+        autoplaySpeed: 3000,
+        speed:1500,
         fade: true,
         cssEase: 'ease',
         adaptiveHeight: false,
-        infinite: true
+        infinite: true,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next')
+        
     });
    
 

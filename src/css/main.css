@@ -42,6 +42,34 @@ body {
   width: 100%;
   height: auto; }
 
+.prev {
+  content: "<";
+  color: red;
+  font-size: 30px;
+  display: block; }
+
+.next {
+  content: ">";
+  color: red;
+  font-size: 30px;
+  visibility: visible;
+  display: block; }
+
+.intro__slide-arrows {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  top: 50%; }
+
 .btn {
   color: #f3eeea;
   font-family: "Proxima Nova Rg", sans-serif;
