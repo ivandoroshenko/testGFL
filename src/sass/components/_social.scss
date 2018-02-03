@@ -1,0 +1,30 @@
+.social__list   {
+    list-style: none;
+    @include flex-row;
+    margin: 0;
+    padding: 0;
+    
+}
+.social__item {
+    margin-right: 8px;
+}
+.social__link {
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    width: 100%;
+    
+
+    &:last-child {
+        margin-right: 0;
+    }
+    
+    &:hover > img {
+        filter: invert(1);
+        
+    }
+    img {
+        display: block;
+        
+    }
+}

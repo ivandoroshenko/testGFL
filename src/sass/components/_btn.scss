@@ -7,5 +7,11 @@
     text-transform: uppercase;
     border-radius: 5px;
     border: none;
+
+    &:hover {
+    background: #616060;
+    color: #4999af;
+    cursor: pointer;    
+    }
 }  
 

@@ -62,20 +62,7 @@
     margin: 0;
     padding-top: 18px;
 }
-.social__wrap {
-    @include flex-row;
-}
-.social__link {
-    margin-right: 8px;
 
-    &:last-child {
-        margin-right: 0;
-    }
-    
-    img {
-        display: block;
-    }
-}
 
 .footer__copy{
     padding-top: 18px;
