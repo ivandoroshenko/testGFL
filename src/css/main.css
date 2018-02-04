@@ -390,6 +390,15 @@ body {
 
 .search__item {
   padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
   margin-right: 10px; }
   .search__item:last-child {
     margin-right: 0; }
@@ -401,7 +410,9 @@ body {
 
 .search__item--line {
   font-size: 12px;
-  color: #fff; }
+  color: #fff;
+  display: block;
+  margin-right: 10px; }
   @media screen and (max-width: 768px) {
     .search__item--line {
       display: none; } }

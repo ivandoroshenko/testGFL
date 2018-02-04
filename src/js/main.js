@@ -32,9 +32,6 @@ $(function() {
         nextArrow: $('.next')
     });
    
-
-    
-    
 }); 
 
 
