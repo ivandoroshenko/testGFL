@@ -24,14 +24,25 @@
     display: flex;
     justify-content: space-between;
     top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    
+    
   }
 
 .prev, 
 .next {
+  
   background: #2f2f2e;
   opacity: 0.7;
   margin: 0;
   cursor: pointer;
+
+    @media screen and (max-width:460px) {
+            display: none;
+            
+        }
+  
  
 
  img {

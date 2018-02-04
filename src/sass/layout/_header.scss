@@ -1,7 +1,10 @@
 .header {
+    max-width: 1000px;
+    margin: 0;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);    
     width: 100%;
     @include flex-row;
     background: #fff;
@@ -9,6 +12,17 @@
     justify-content: space-between;
     align-items: center;
     z-index: 10;
+
+     @media screen and (max-width: 1024px) {
+        width: auto;
+        margin: 0 auto;    
+       padding-top: 10px;
+       align-items: flex-start;
+    }
+      @media screen and (max-width: 768px) {
+       background: transparent;
+       padding-top: 5px;
+    }
 }
 .logo__wrap{
     padding-left: 65px;
@@ -46,6 +60,7 @@
     right: -13px;
     padding: 11px 22px 11px 13px;
     justify-content: space-between;
+    min-width: 250px;
    
     //right rectangule
     &:before {
@@ -67,7 +82,10 @@
     margin-right: 99px - 15px;
     margin: 0 73px 0 0;
     padding: 0;
-    
+     @media screen and (max-width: 1024px) {
+         margin-right: 15px;
+       
+    }
 }
 
 .search__item {
@@ -105,6 +123,9 @@
     }
 .nav {
     padding-right: 17px;
+    @media screen and (max-width: 1024px) {
+        display: none; 
+    }
 }
 .nav__list{
     @include flex-row;

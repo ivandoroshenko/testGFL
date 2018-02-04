@@ -1,32 +1,64 @@
 .footer{
     background: #525252 ;
-    
-    
-
-    
+    display: flex;
+    justify-content: center;
+    padding-bottom: 34px;
 }
 
 .footer__container {
-    padding: 32px 0 34px;
+       @media screen and (max-width: 1024px){
+           width: 100%;
+    }
+}
+.footer__block {
+    
+    @media screen and (max-width: 1024px){
+            margin-top: 20px;
+    }
+
+      @media screen and (max-width: 768px){
+        text-align: left;   
+    }
 }
 .footer__address-wrap {
-    width: 100%;
+    width: 100%;    
     @include flex-row;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 0 56px 40px 0;
+    padding: 32px 0 40px;
+    border-bottom: 1px solid #6b6b6a;
+    
+
+        @media screen and (max-width: 1024px){
+            flex-flow: row wrap;
+            justify-content: space-around;
+            padding: 0 0 40px 0;
+            width: 100%;
+        }
+        @media screen and (max-width: 768px){
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
 
 }
 .footer__title {
     padding: 0;
     margin: 0 0 36px 0;
     max-width: 286px;
-    line-height: 14px;
+    line-height: 1.25rem;
     color: #f3eeea;
     font-family: $base-font;
     font-size: 1.25rem;
     font-weight: 400;
     text-transform: uppercase;
+
+     @media screen and (max-width: 1024px){
+            margin-bottom: 27px;
+    }
+      @media screen and (max-width: 768px){
+        text-align: center;
+    }
 
     &--email{
         margin-bottom: 27px;
@@ -56,6 +88,11 @@
 .footer__btn {
     background: #4999af;
     padding: 9px 77px;
+     @media screen and (max-width: 340px){
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 .footer__copy {
     width: 100%;
@@ -64,18 +101,18 @@
 }
 
 
-.footer__copy{
-    padding-top: 18px;
-    border-top: 1px solid #6b6b6a;
-}
+
 
 .footer__copy-text {
-    padding: 0;
+    padding: 18px 0 0 0;
     margin: 0;
-    width: 379px;
-    height: 13px;
+        height: 13px;
     color: #b3b3b3;
     font-family: "Myriad Pro";
     font-size: 0.75rem;
     font-weight: 400;
+
+      @media screen and (max-width: 768px){
+        text-align: center;
+    }
 }

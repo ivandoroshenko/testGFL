@@ -1,38 +1,58 @@
 .events {
     background: #f3eeea;
     padding: 30px 0;
+    display: flex;
 }
 
 .events__gallery {
     @include flex-row;
     justify-content: space-between;
+
+      @media screen and (max-width: 1024px) {
+           flex-wrap: wrap;
+           justify-content: space-around;
+        }
+
+         @media screen and (max-width: 768px) {
+           flex-flow: column nowrap;
+        }
 }
 .events__card {
     position: relative;
-    
 
-    &:last-child {
-        margin-right: 0;
-    }
+    @media screen and (max-width: 1024px) {
+           margin-bottom: 20px;
+           
+        }
+
+         @media screen and (max-width: 768px) {
+           margin: 10px;
+           width: 100%; 
+
+           &:first-child {
+               margin-top: 0;
+           }
+        }
 }
 
 .events__card-img{
     display: block;
+    width: 100%;
 }
 .events__card-descr {
-    height: 100%;
+    width: 100%;
     position: absolute;
+    bottom: 0;
+    right: 0;
     width: 320px;
-    margin: 0 20px 0 0;
-    padding: 96px 0 0 0;
-    top: 0;
-    left: 0;
+    margin: 0;
+    padding: 0;
     text-align: right;
-    
+
 }
 
 .events__card-title {
-min-width: 280px;;
+min-width: 280px;
 text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
 color: #fff;
 font-family: $base-font;
@@ -40,7 +60,7 @@ font-size: 2.813rem;
 font-weight: 700;
 text-transform: uppercase;
 padding: 0;
-margin: 0 20px 0 0;
+margin: 0 20px 67px 0;
 }
 
 .events__card-link {
@@ -93,14 +113,25 @@ margin: 0 20px 0 0;
     padding-top: 33px;
     justify-content: space-between;
     width: 100%;
-    justify-content: space-between;
     align-items: flex-start;
+
+     @media screen and (max-width: 768px){
+        flex-flow: column nowrap;
+        align-items: center;
+        padding: 0 20px;
+    }
 }
 
 .events__descr-left {
     width: 48%;
     margin-right: 40px;
     flex-grow: 2;
+
+     @media screen and (max-width: 768px){
+        margin-bottom: 15px;
+        width: 100%;
+        margin-right: 0px;
+    }
 }
 
 .events__title {
@@ -166,7 +197,7 @@ margin: 0 20px 0 0;
     padding: 0; 
     @include flex-row;
     max-width: 134px;
-    line-height: 12px;
+    line-height: 1.063rem;
     color: #f1715e;
     font-family: $base-font;
     font-size: 1.063rem;
@@ -202,6 +233,10 @@ margin: 0 20px 0 0;
 .events__descr-right {
     flex-shrink: 1;
     width: 48%;
+     @media screen and (max-width: 768px){
+        margin-bottom: 15px;
+        width: 100%;
+    }
 }
 
 .events__descr-title {
@@ -218,6 +253,10 @@ margin: 0 20px 0 0;
 .events__descr-text {
     padding: 0;
     margin: 0;
+
+     @media screen and (max-width: 768px){
+        text-align: justify;
+    }
 }
 .events__desct-button {
     background: transparent;
