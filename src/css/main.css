@@ -674,6 +674,9 @@ body {
   text-transform: uppercase;
   padding: 0;
   margin: 0 20px 67px 0; }
+  @media screen and (max-width: 325px) {
+    .events__card-title {
+      font-size: 2.5rem; } }
 
 .events__card-link {
   max-width: 270px;
@@ -939,14 +942,6 @@ body {
 
 .footer {
   background: #525252;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding-bottom: 34px; }
 
 @media screen and (max-width: 1024px) {
