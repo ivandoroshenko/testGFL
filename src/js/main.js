@@ -1,15 +1,31 @@
 $(function() {
 
-        // //navigation click======
-        // $('.nav__item a').click(function (e) {
-        //     e.preventDefault();
-        //     console.log($(this).attr('href'));
-        //     var getHref = $(this).attr('href');
-        //     var jump = $(getHref).offset().top;
-        //     $('html, body').animate({
-        //         scrollTop: jump
-        //     }, 1000);
-        // });
+    $('.header__hamburger').click(function (event) {
+        $('.nav__group').addClass("nav__group--shown");
+        $('.overlay').addClass("overlay__shown");
+        $('body').addClass("fixed_overlay");
+        }); 
+
+    $(document).bind("click keydown", function (event) {
+        closeModal = event.target;
+        escapeClose = event.which;
+        if ($(closeModal).hasClass("overlay") || escapeClose == 27) {
+            $('.nav__group').removeClass("nav__group--shown");
+            $('body').removeClass("fixed_overlay");
+            $('.overlay').removeClass("overlay__shown");
+        }
+
+    });
+        //navigation click======
+        $('.nav__item a').click(function (e) {
+            e.preventDefault();
+            console.log($(this).attr('href'));
+            var getHref = $(this).attr('href');
+            var jump = $(getHref).offset().top;
+            $('html, body').animate({
+                scrollTop: jump
+            }, 1000);
+        });
 
     $('.intro__slider').slick({
         dots: false,

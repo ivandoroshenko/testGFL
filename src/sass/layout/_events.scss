@@ -27,7 +27,7 @@
 
          @media screen and (max-width: 768px) {
            margin: 10px;
-           width: 100%; 
+           width: 100%;     
 
            &:first-child {
                margin-top: 0;
@@ -118,7 +118,7 @@ margin: 0 20px 67px 0;
      @media screen and (max-width: 768px){
         flex-flow: column nowrap;
         align-items: center;
-        padding: 0 20px;
+        padding: 20px 0 0 0;
     }
 }
 
@@ -253,7 +253,9 @@ margin: 0 20px 67px 0;
 .events__descr-text {
     padding: 0;
     margin: 0;
-
+ @media screen and (max-width: 1024px){
+        text-align: justify;
+    }
      @media screen and (max-width: 768px){
         text-align: justify;
     }

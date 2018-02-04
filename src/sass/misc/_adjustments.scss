@@ -3,7 +3,30 @@
     box-sizing: border-box;
    
 }
+.overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #111;
+    opacity: 0.8;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform .4s;
 
+    &__shown {
+      transform: translateX(0);  
+    }
+    
+}
+
+.fixed_overlay{
+    height: 100%;
+    overflow: hidden;
+    width: 100vw;
+}
 html, body{
     width: 100%;
     min-height: 100vh;
@@ -28,6 +51,13 @@ body{
    
     @media screen and (max-width: 1024px){
         padding: 0 15px;
+        max-width: 800px;
+    }
+
+    @media screen and (max-width: 768px){
+        
+        width: 500px;
+
     }
    
 }
