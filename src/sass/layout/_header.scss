@@ -83,20 +83,23 @@
     right: 0;
     top: 0;
     display: flex;
+    height: 100vh;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+    width: 260px;
     align-items: flex-end;
      @media screen and (max-width: 768px) {
         right: 0;
         top: 0;
         transform: translateX(100%);
         margin: 0;
-        padding: 0 20px 10px;
+        padding: 0 0 10px 40px;
         background: rgba(27, 127, 155, 0.9);
         align-items: flex-start;
         position: fixed;    
         z-index: 12;
         transition: transform .5s;
+    
 
         &--shown {
             transform: translateX(0);
