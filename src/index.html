@@ -17,6 +17,7 @@
     <title>SevenOaks</title>
 </head>
 <body>
+    <div class="login__overlay"></div>
     <div class="overlay"></div>
     <div class="header__container">
         <!-- header -->
@@ -204,7 +205,7 @@
             <div class="footer__address-wrap">
                 <div class="footer__email footer__block">
                     <h3 class="footer__title footer__title--email">signup to our newsletter</h3>
-                    <button class="btn footer__btn">EMAIL SIGNUP</button>
+                    <button class="btn footer__btn" id="footer__btn">Subscribe</button>
                 </div>
 
                 <div class="footer__shift footer__block">
@@ -256,5 +257,16 @@
     </footer>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
+    <!-- SUBSCRIBE POPUP -->
+    <div class="subscribe__modal">
+        <h2 class="subscribe__modal_title">Subscribe to our newsletters</h2>
+        <p class="subscribe__modal_text">
+             Please enter you email address to receive all news from our site.
+        </p>
+        <input type="email" placeholder="example@gmail.com" class="modal__email">
+        <h3 class="subscribe__modal_subtitle">* Don’t worry you’ll not be spammed</h3>
+        <button class="btn footer__btn modal__btn" id="modal__btn">Subscribe</button>
+    </div>
+    <!-- / SUBSCRIBE POPUP -->
 </body>
 </html>
