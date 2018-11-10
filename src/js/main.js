@@ -7,15 +7,19 @@ $(function() {
         }); 
 
     $(document).bind("click keydown", function (event) {
-        closeModal = event.target;
+        target = event.target;
         escapeClose = event.which;
-        if ($(closeModal).hasClass("overlay") || escapeClose == 27) {
+        if ($(target).hasClass("overlay") || escapeClose == 27) {
             $('.nav__group').removeClass("nav__group--shown");
             $('body').removeClass("fixed_overlay");
             $('.overlay').removeClass("overlay__shown");
-        }
+        } 
 
     });
+
+    $(document).on('click', '.subscribe__modal_close, #modal__btn', function () {
+        $('.subscribe__modal').hide();
+    })
       
     $('.intro__slider').slick({
         dots: false,
