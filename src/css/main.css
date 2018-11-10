@@ -600,7 +600,7 @@ body {
     font-weight: 300; }
 
 .d-none {
-  display: none; }
+  display: none !important; }
 
 .events {
   background: #f3eeea;
@@ -1081,7 +1081,7 @@ body {
       text-align: center; } }
 
 .subscribe__modal {
-  position: absolute;
+  position: fixed;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1104,8 +1104,7 @@ body {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 46px 46px 35px;
-  display: none; }
+  padding: 46px 46px 35px; }
 
 .subscribe__modal_title {
   padding: 0;

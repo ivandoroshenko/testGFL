@@ -1,5 +1,7 @@
 $(function() {
 
+    $('.subscribe__modal').addClass('d-none');
+
     $('.header__hamburger').click(function (event) {
         $('.nav__group').addClass("nav__group--shown");
         $('.overlay').addClass("overlay__shown");
@@ -16,9 +18,11 @@ $(function() {
         } 
 
     });
-
+    $(document).on('click', '#footer__btn', function() {
+        $('.subscribe__modal').removeClass('d-none');
+    })
     $(document).on('click', '.subscribe__modal_close, #modal__btn', function () {
-        $('.subscribe__modal').hide();
+        $('.subscribe__modal').addClass('d-none');
     })
       
     $('.intro__slider').slick({

@@ -1,5 +1,5 @@
 .subscribe__modal {
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-flow: column nowrap;
     top: 50%;
@@ -10,7 +10,6 @@
     z-index: 99;
     justify-content: center;
     padding: 46px 46px 35px; 
-    display: none;   
 }
 
 .subscribe__modal_title {
